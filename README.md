@@ -28,7 +28,7 @@ load yuuno plugin in jupyter notebook, then you can preview any frame
 
 #### _run the example code in order, encode your first video!_
 
-![vsplayground001](https://raw.githubusercontent.com/TensoRaws/.github/refs/heads/main/vsplayground001.png)
+![vsplayground001](https://raw.githubusercontent.com/EutropicAI/.github/refs/heads/main/vsplayground001.png)
 
 ### SSH
 
@@ -134,4 +134,4 @@ make pt && make pg
 
 ### License
 
-This project is licensed under the GPL-3.0 license - see the [LICENSE file](https://github.com/EutropicAI/vs-playground/blob/main/LICENSE) for details.
+This project is licensed under the GPL-3.0 license - see the [LICENSE file](./LICENSE) for details.
