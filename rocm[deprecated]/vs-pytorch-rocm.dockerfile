@@ -235,21 +235,21 @@ RUN ln -s /usr/local/lib/x86_64-linux-gnu/libsangnom.so /usr/local/lib/vapoursyn
 
 # TensoRaw's plugins
 # descale
-RUN git clone https://github.com/TensoRaws/vapoursynth-descale --depth 1 && cd vapoursynth-descale && \
+RUN git clone https://github.com/EutropicAI/vapoursynth-descale --depth 1 && cd vapoursynth-descale && \
     mkdir build && cd build && meson ../ && ninja && ninja install
 
 # hqdn3d
-RUN git clone https://github.com/TensoRaws/vapoursynth-hqdn3d --depth 1 && cd vapoursynth-hqdn3d && \
+RUN git clone https://github.com/EutropicAI/vapoursynth-hqdn3d --depth 1 && cd vapoursynth-hqdn3d && \
     ./autogen.sh && CXXFLAGS=-fPIC ./configure && make -j$(nproc) && make install
 RUN ln -s /usr/local/lib/libhqdn3d.so /usr/local/lib/vapoursynth/libhqdn3d.so
 
 # d2vsource
-RUN git clone https://github.com/TensoRaws/d2vsource --depth 1 && cd d2vsource && \
+RUN git clone https://github.com/EutropicAI/d2vsource --depth 1 && cd d2vsource && \
     ./autogen.sh && CXXFLAGS=-fPIC ./configure && make -j$(nproc) && make install
 RUN ln -s /usr/local/lib/libd2vsource.so /usr/local/lib/vapoursynth/libd2vsource.so
 
 # znedi3
-RUN git clone https://github.com/TensoRaws/znedi3 --depth 1 --recurse-submodules && cd znedi3 && \
+RUN git clone https://github.com/EutropicAI/znedi3 --depth 1 --recurse-submodules && cd znedi3 && \
     mkdir build && cd build && meson ../ && ninja && ninja install
 RUN ln -s /usr/local/lib/x86_64-linux-gnu/libvsznedi3.so /usr/local/lib/vapoursynth/libvsznedi3.so
 RUN cp znedi3/nnedi3_weights.bin /usr/local/lib && \
@@ -302,7 +302,7 @@ RUN pip install vsutil==0.8.0
 
 # install Jaded Encoding Thaumaturgy's func package (Why you *** require python >= 3.12?)
 # fix import error in my branch
-RUN pip install git+https://github.com/TensoRaws/vs-tools-2.3.0.git
+RUN pip install git+https://github.com/EutropicAI/vs-tools-2.3.0.git
 RUN pip install \
     vspyplugin==1.3.2 \
     vskernels==2.4.1 \
@@ -343,7 +343,7 @@ RUN location=$(pip show torch | grep Location | awk -F ": " '{print $2}') && \
     rm -f libhsa-runtime64.so* && \
     cp /opt/rocm/lib/libhsa-runtime64.so.1.2 libhsa-runtime64.so
 
-# install TensoRaws's packages
+# install EutropicAI's packages
 RUN pip install \
     mbfunc==0.1.0 \
     ccrestoration==0.2.1 \

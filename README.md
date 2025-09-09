@@ -1,8 +1,8 @@
 # vs-playground
 
-[![CI-test](https://github.com/TensoRaws/vs-playground/actions/workflows/CI-test.yml/badge.svg)](https://github.com/TensoRaws/vs-playground/actions/workflows/CI-test.yml)
-[![CI-build](https://github.com/TensoRaws/vs-playground/actions/workflows/CI-build.yml/badge.svg)](https://github.com/TensoRaws/vs-playground/actions/workflows/CI-build.yml)
-[![Release](https://github.com/TensoRaws/vs-playground/actions/workflows/Release.yml/badge.svg)](https://github.com/TensoRaws/vs-playground/actions/workflows/Release.yml)
+[![CI-test](https://github.com/EutropicAI/vs-playground/actions/workflows/CI-test.yml/badge.svg)](https://github.com/EutropicAI/vs-playground/actions/workflows/CI-test.yml)
+[![CI-build](https://github.com/EutropicAI/vs-playground/actions/workflows/CI-build.yml/badge.svg)](https://github.com/EutropicAI/vs-playground/actions/workflows/CI-build.yml)
+[![Release](https://github.com/EutropicAI/vs-playground/actions/workflows/Release.yml/badge.svg)](https://github.com/EutropicAI/vs-playground/actions/workflows/Release.yml)
 
 dev with docker and jupyter notebook!
 
@@ -28,7 +28,7 @@ load yuuno plugin in jupyter notebook, then you can preview any frame
 
 #### _run the example code in order, encode your first video!_
 
-![vsplayground001](https://raw.githubusercontent.com/TensoRaws/.github/refs/heads/main/vsplayground001.png)
+![vsplayground001](https://raw.githubusercontent.com/EutropicAI/.github/refs/heads/main/vsplayground001.png)
 
 ### SSH
 
@@ -128,10 +128,10 @@ make pt && make pg
 
 - [static-ffmpeg](https://github.com/wader/static-ffmpeg)
 - [VSGAN-tensorrt-docker](https://github.com/styler00dollar/VSGAN-tensorrt-docker)
-- [vs-ffmpeg-docker](https://github.com/TensoRaws/vs-ffmpeg-docker)
+- [vs-ffmpeg-docker](https://github.com/EutropicAI/vs-ffmpeg-docker)
 - [VapourSynth](https://www.vapoursynth.com/)
 - [yuuno](https://github.com/Irrational-Encoding-Wizardry/yuuno)
 
 ### License
 
-This project is licensed under the GPL-3.0 license - see the [LICENSE file](https://github.com/TensoRaws/vs-playground/blob/main/LICENSE) for details.
+This project is licensed under the GPL-3.0 license - see the [LICENSE file](./LICENSE) for details.

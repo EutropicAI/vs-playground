@@ -454,21 +454,21 @@ RUN ln -s /usr/local/lib/x86_64-linux-gnu/libsangnom.so /usr/local/lib/vapoursyn
 
 # TensoRaw's plugins
 # descale
-RUN git clone https://github.com/TensoRaws/vapoursynth-descale --depth 1 && cd vapoursynth-descale && \
+RUN git clone https://github.com/EutropicAI/vapoursynth-descale --depth 1 && cd vapoursynth-descale && \
     mkdir build && cd build && meson ../ && ninja && ninja install
 
 # hqdn3d
-RUN git clone https://github.com/TensoRaws/vapoursynth-hqdn3d --depth 1 && cd vapoursynth-hqdn3d && \
+RUN git clone https://github.com/EutropicAI/vapoursynth-hqdn3d --depth 1 && cd vapoursynth-hqdn3d && \
     ./autogen.sh && CXXFLAGS=-fPIC ./configure && make -j$(nproc) && make install
 RUN ln -s /usr/local/lib/libhqdn3d.so /usr/local/lib/vapoursynth/libhqdn3d.so
 
 ## d2vsource
-#RUN git clone https://github.com/TensoRaws/d2vsource --depth 1 && cd d2vsource && \
+#RUN git clone https://github.com/EutropicAI/d2vsource --depth 1 && cd d2vsource && \
 #    ./autogen.sh && CXXFLAGS=-fPIC ./configure && make -j$(nproc) && make install
 #RUN ln -s /usr/local/lib/libd2vsource.so /usr/local/lib/vapoursynth/libd2vsource.so
 
 # znedi3
-RUN git clone https://github.com/TensoRaws/znedi3 --depth 1 --recurse-submodules && cd znedi3 && \
+RUN git clone https://github.com/EutropicAI/znedi3 --depth 1 --recurse-submodules && cd znedi3 && \
     mkdir build && cd build && meson ../ && ninja && ninja install
 RUN ln -s /usr/local/lib/x86_64-linux-gnu/libvsznedi3.so /usr/local/lib/vapoursynth/libvsznedi3.so
 RUN cp znedi3/nnedi3_weights.bin /usr/local/lib && \
@@ -556,7 +556,7 @@ RUN pip install --no-cache-dir torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.
 # install CuPy
 RUN pip install --no-cache-dir cupy-cuda12x
 
-# install TensoRaws's packages
+# install EutropicAI's packages
 RUN pip install --no-cache-dir \
     mbfunc==0.1.0 \
     ccrestoration==0.2.1 \
