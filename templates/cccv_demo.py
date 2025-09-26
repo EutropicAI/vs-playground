@@ -1,14 +1,13 @@
 import os
 
+import mvsfunc as mvf
 import vapoursynth as vs
 from vapoursynth import core
 
-import mvsfunc as mvf
-from ccrestoration import AutoModel, BaseModelInterface, ConfigType
+from cccv import AutoModel, ConfigType, SRBaseModel
 
-
-model: BaseModelInterface = AutoModel.from_pretrained(
-    pretrained_model_name=ConfigType.RealESRGAN_AnimeJaNai_HD_V3_Compact_2x, tile=None
+model: SRBaseModel = AutoModel.from_pretrained(
+    ConfigType.RealESRGAN_AnimeJaNai_HD_V3_Compact_2x, tile=None
 )
 
 if os.getenv("FINALRIP_SOURCE"):

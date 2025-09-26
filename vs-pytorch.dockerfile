@@ -538,11 +538,6 @@ RUN cp VapourSynth-ILS/build/libils.so /usr/local/lib && \
 # Install VapourSynth Python plugins
 ###
 
-# install python packages with specific versions!!!
-RUN pip install --no-cache-dir \
-    numpy==1.26.4 \
-    opencv-python==4.10.0.84
-
 # install vsutil
 RUN pip install --no-cache-dir vsutil==0.8.0
 
@@ -556,8 +551,16 @@ RUN pip install --no-cache-dir torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.
 # install CuPy
 RUN pip install --no-cache-dir cupy-cuda12x
 
+# install python packages with specific versions!!!
+RUN pip install --no-cache-dir \
+    numpy==1.26.4 \
+    opencv-python==4.10.0.84
+
 # install EutropicAI's packages
+# Notice: ccrestoration and ccvfi are no longer maintained, consider using cccv instead
+# In cccv, we have implemented most of the features from ccrestoration and ccvfi, Enjoy!
 RUN pip install --no-cache-dir \
     mbfunc==0.2.0 \
+    cccv==0.0.3 \
     ccrestoration==0.2.2 \
     ccvfi==0.0.3
