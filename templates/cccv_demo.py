@@ -1,10 +1,10 @@
 import os
 
-import mvsfunc as mvf
 import vapoursynth as vs
 from vapoursynth import core
 
 from cccv import AutoModel, ConfigType, SRBaseModel
+import mvsfunc as mvf
 
 model: SRBaseModel = AutoModel.from_pretrained(
     ConfigType.RealESRGAN_AnimeJaNai_HD_V3_Compact_2x, tile=None
