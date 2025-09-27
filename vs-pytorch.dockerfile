@@ -561,6 +561,6 @@ RUN pip install --no-cache-dir \
 # In cccv, we have implemented most of the features from ccrestoration and ccvfi, Enjoy!
 RUN pip install --no-cache-dir \
     mbfunc==0.2.0 \
-    cccv==0.0.3 \
+    cccv==0.0.4 \
     ccrestoration==0.2.2 \
     ccvfi==0.0.3
