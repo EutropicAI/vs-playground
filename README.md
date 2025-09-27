@@ -28,7 +28,7 @@ load yuuno plugin in jupyter notebook, then you can preview any frame
 
 #### _run the example code in order, encode your first video!_
 
-![vsplayground001](https://raw.githubusercontent.com/EutropicAI/.github/refs/heads/main/vsplayground001.png)
+<img width="2634" height="1702" alt="image" src="https://github.com/user-attachments/assets/6a841172-eb0f-4b57-875a-68d37a9127fd" />
 
 ### SSH
 
