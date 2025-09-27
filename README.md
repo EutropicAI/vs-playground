@@ -64,8 +64,7 @@ the playground image has sshd installed, you can ssh into the container to dev
 
 ```bash
 mbfunc
-ccrestoration
-ccvfi
+cccv
 vsutil
 mvsfunc
 ```
